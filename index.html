@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+</head>
+<body>
+    <div class="weather-container">
+
+        <header class="input-container">
+            <input type="city-input" placeholder="search city" type="text">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="locatin-date-container">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4 class="country-text">Enugu</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Sun, 07 Sep</h5>
+
+            </div>
+            <div class="weather-summary-container">
+                <img src="./image/weather-svgrepo-com.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C</h1>
+                    <h3 class="condition-txt regular-txt">Clouds</h3>
+                </div>
+            </div>
+            <div class="weather-condition-container">
+                <div class="condition-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <img src="./image/air-svgrepo-com.svg" class="air">
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind speed</h5>
+                        <h5 class="wind-value-txt">2 M/s</h5>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Sep</h5>
+                    <img src="./image/cloud-with-lightning-and-rain-svgrepo-com.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">25 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Sep</h5>
+                    <img src="./image/cloud-with-lightning-and-rain-svgrepo-com.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">25 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Sep</h5>
+                    <img src="./image/cloud-with-lightning-and-rain-svgrepo-com.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">25 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Sep</h5>
+                    <img src="./image/cloud-with-lightning-and-rain-svgrepo-com.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">25 °C</h5>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="search-city section-message">
+            <img src="./image/searching-people-svgrepo-com.svg" alt="">
+           <div>
+               <h4 class="regular-txt">
+                Find weather of your city by entering the city name
+               </h4>
+           </div>
+        </section>
+
+
+        <section class="not-found section-message" style="display: none;">
+            <img src="./image/not-found-error-alert-svgrepo-com.svg" alt="">
+           <div>
+               <h4 class="regular-txt">
+                Find weather of your city by entering the city name
+               </h4>
+           </div>
+        </section>
+         
+    </div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+
